@@ -1,0 +1,106 @@
+
+
+.end {
+	padding: 30px 0;
+	margin: 0 auto;
+	&_item {
+		display: flex;
+		justify-content: space-between;
+		flex-direction: column;
+		padding: 0;
+	}
+	&_itemss {
+		font-family: "Roboto";
+		font-style: normal;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 24px;
+		letter-spacing: 0.03em;
+		color: $var1;
+	}
+	/* or 171% */
+
+  letter-spacing: 0.03em;
+
+  color: #ffffff;
+}
+.end_items {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  /* or 171% */
+	&_items {
+		font-family: "Roboto";
+		font-style: normal;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 24px;
+		letter-spacing: 0.03em;
+		color: rgba(255, 255, 255, 0.6);
+	}
+}
+.footer_h2 {
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 16px;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	color: $var1;
+}
+.elipses:hover {
+	background-color: $var2;
+	transition: 0.8s all;
+	svg path {
+		fill: $var1;
+	}
+}
+.elipses svg path {
+	fill: $var1;
+}
+.elipses {
+	width: 20px;
+	height: 20px;
+	background-color: rgba(255, 255, 255, 0.1);
+	border-radius: 100%;
+	cursor: pointer;
+}
+.ellipse {
+	display: flex;
+	padding: 0;
+	gap: 10px;
+	display: flex;
+	justify-content: center;
+}
+.tel_number:hover path {
+	fill: $var2;
+	gap: 6px;
+}
+footer {
+	background-color: $var3;
+}
+.block_f {
+	color: $var4;
+	font-family: Roboto;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	letter-spacing: 0.42px;
+	text-transform: uppercase;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.all_box_footer {
+	gap: 94px;
+	display: flex;
+}
+.join_box {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
