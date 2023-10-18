@@ -1,0 +1,190 @@
+.logo {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    /* identical to box height */
+    letter-spacing: 0.03em;
+    color: black;
+  }
+
+  .header__link::after {
+    display: block;
+    content: "";
+    width: 100%;
+    height: 4px;
+    transition: 0.9s all;
+    
+    position: absolute;
+    top: 40px;
+    transform: rotateY(90deg);
+    }
+    .header__link:hover::after {
+    content: "";
+    background-color: #2196f3;
+    border: 2px;
+    transform: rotate(0deg);
+    }
+    .header__link:hover {
+    color: #2196f3;
+    }
+    
+     .header__link::after {
+	display: block;
+	content: "";
+	width: 100%;
+	height: 4px;
+	transition: 0.9s all;
+  
+	position: absolute;
+	top: 40px;
+	transform: rotateY(90deg);
+  }
+  .header__link:hover::after {
+	content: "";
+	background-color: #2196f3;
+	border: 2px;
+	transform: rotate(0deg);
+  }
+  .header__link:hover {
+	color: #2196f3;
+  }
+  
+  .header__link{
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 16px;
+	letter-spacing: 0.02em;
+	position: relative;
+  
+	color: #212121;
+  }
+  
+  .header__blocks {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header__left {
+    display: flex;
+    align-items: center;
+    gap: 90px;
+  }
+  .header__list{
+    display: flex;
+    justify-content: space-between;
+    width: 280px;
+    padding: 0;
+  }
+  .header__menu_contact {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+  }
+  
+  .header__main {
+    display: flex;
+    justify-content: center;
+    width: 1600px;
+  }
+  .header_menu {
+    width: 280px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .div_cards {
+    padding: 20px 24px;
+  }
+  .promo {
+    background-image: url("../../");
+    z-index: 2;
+    object-fit: cover;
+  }
+  .promo_btn {
+    margin: 0 auto;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0.96px;
+    color: white;
+    width: 216px;
+    height: 50px;
+    
+  }
+  .message {
+    border-radius: 4px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    outline:none;
+  }
+  .tel_number > svg {
+    margin-right: 10px;
+    }
+    .tel_number > i {
+    margin-right: 10px;
+    }
+
+    .nav_menu {
+      display: flex;
+      gap: 8px;
+      padding: 94px 0 35px 0;
+      justify-content: center;
+      }
+    header {
+    display: flex;
+    width: 100%;
+    position: fixed;
+    background-color: #ffffff;
+    top: 0;
+    }
+
+    .promo_overlay {
+      background: rgba(47, 48, 58, 0.4);
+      padding: 200px 0;
+      }
+
+
+      
+  .promo__btn {
+    border: none;
+    display: block;
+    background: #2196f3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    color: #FFF;
+text-align: center;
+font-family: Roboto;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: 30px; /* 187.5% */
+letter-spacing: 0.96px;
+cursor: pointer;
+align-items: center;
+width: 216px;
+height: 50px;
+flex-shrink: 0;
+margin: 0 auto;    /* identical to box height, or 188% */
+    }
+    .promo {
+      background-image: url(../src/img/background.png);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      margin-top: 75px;
+      }
+  

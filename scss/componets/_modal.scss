@@ -1,23 +1,20 @@
-$var1: #ffffff;
-$var2: #757575;
-$var3: #212121;
-$var4: #2196f3;
-
 .btn_open {
 	color: white;
 	background-color: purple;
-}
-.btn_close {
+  }
+  
+  .btn_close {
 	top: 6px;
 	left: 492px;
 	position: relative;
+  
 	border: none;
 	font-weight: 700;
 	font-size: 25px;
 	border-radius: 100%;
 	background-color: white;
-}
-.backdrop {
+  }
+  .backdrop {
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -25,45 +22,48 @@ $var4: #2196f3;
 	height: 100%;
 	background-color: rgba(0, 0, 0, 0.5);
 	display: block;
-}
-.modal {
+  }
+  
+  .modal {
 	position: absolute;
 	left: 50%;
 	top: 50%;
 	transform: translate(-50%, -50%);
 	width: 528px;
 	height: 581px;
+  
 	box-sizing: border-box;
 	border-radius: 4px;
-	background: $var1;
+	background: #fff;
 	box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
-    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
-}
-.is-hidden {
+	  0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  }
+  .is-hidden {
 	display: none;
-}
-.no-scroll {
+  }
+  .no-scroll {
 	overflow: hidden;
-}
-span {
+  }
+  
+  span {
 	color: black;
-}
-input {
+  }
+  input {
 	border: none;
 	outline: none;
 	margin-left: 10px;
-}
-.expl_text {
-	color: $var2;
+  }
+  .expl_text {
+	color: #757575;
 	font-family: Roboto;
 	font-size: 12px;
 	font-style: normal;
 	font-weight: 400;
 	line-height: normal;
 	letter-spacing: 0.12px;
-}
-.form_text {
-	color: $var3;
+  }
+  .form_text {
+	color: #212121;
 	text-align: center;
 	font-family: Roboto;
 	font-size: 20px;
@@ -71,8 +71,8 @@ input {
 	font-weight: 700;
 	line-height: normal;
 	letter-spacing: 0.6px;
-}
-textarea {
+  }
+  textarea {
 	width: 448px;
 	height: 120px;
 	box-sizing: border-box;
@@ -84,26 +84,26 @@ textarea {
 	font-weight: 400;
 	line-height: normal;
 	letter-spacing: 0.12px;
-}
-form {
+  }
+  form {
 	padding: 12px 40px 30px 40px;
-}
-.contact_btn {
+  }
+  .contact_btn {
 	width: 200px;
 	height: 50px;
 	flex-shrink: 0;
 	border-radius: 4px;
-	background: $var4;
+	background: #2196f3;
 	box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 	border: none;
 	cursor: pointer;
-	color: $var1;
+	color: #fff;
 	text-align: center;
 	font-family: Roboto;
 	font-size: 16px;
 	font-style: normal;
 	font-weight: 700;
-	line-height: 30px;
+	line-height: 30px; /* 187.5% */
 	letter-spacing: 0.96px;
 	display: flex;
 	justify-content: center;
@@ -111,95 +111,17 @@ form {
 	margin-top: 10px;
 	margin-bottom: 30px;
 	margin: 0 auto;
-
-/* 187.5% */
-  letter-spacing: 0.96px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 10px;
-  margin-bottom: 30px;
-  margin: 0 auto;
-}
-.checkbox {
-  width: 17px;
-  cursor: pointer;
-}
-.blue {
-  color: #2196f3;
-  text-decoration: underline;
-  cursor: pointer;
-}
-.form_box {
-  width: 448px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  padding: 11px 0 11px 12px;
-  border-radius: 4px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  box-sizing: border-box;
-  margin-bottom: 15px;
-}
-
-.form_box:hover i {
-  color: #2196f3;
-  transition:0.8s all;
-}
-.form_box:hover {
-  border-color: #2196f3;
-  transition:0.8s all;
-}
-.foot_btn_sub {
-  border-radius: 4px;
-  background: #2196f3;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  width: 200px;
-  height: 50px;
-  color: #fff;
-  text-align: center;
-  font-family: Roboto;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 30px; /* 187.5% */
-  letter-spacing: 0.96px;
-  border: none;
-}
-.email_ft_label {
-  color: #fff;
-  font-family: Roboto;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: 0.42px;
-  text-transform: uppercase;
-}
-.footer_input {
-  border-radius: 4px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  background: rgba(33, 150, 243, 0);
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  width: 358px;
-  height: 50px;
-  color: rgba(255, 255, 255, 0.6);
-  font-family: Roboto;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 20px; /* 125% */
-
-.checkbox {
+  }
+  .checkbox {
 	width: 17px;
 	cursor: pointer;
-}
-.blue {
-	color: $var4;
+  }
+  .blue {
+	color: #2196f3;
 	text-decoration: underline;
 	cursor: pointer;
-}
-.form_box {
+  }
+  .form_box {
 	width: 448px;
 	height: 40px;
 	display: flex;
@@ -209,33 +131,34 @@ form {
 	border: 1px solid rgba(33, 33, 33, 0.2);
 	box-sizing: border-box;
 	margin-bottom: 15px;
-	&:hover i {
-		color: $var4;
-		transition: 0.8s all;
-	}
-	&:hover {
-		border-color: $var4;
-		transition: 0.8s all;
-	}
-}
-.foot_btn_sub {
+  }
+  
+  .form_box:hover i {
+	color: #2196f3;
+	transition:0.8s all;
+  }
+  .form_box:hover {
+	border-color: #2196f3;
+	transition:0.8s all;
+  }
+  .foot_btn_sub {
 	border-radius: 4px;
-	background: $var4;
+	background: #2196f3;
 	box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 	width: 200px;
 	height: 50px;
-	color: $var1;
+	color: #fff;
 	text-align: center;
 	font-family: Roboto;
 	font-size: 16px;
 	font-style: normal;
 	font-weight: 700;
-	line-height: 30px;
+	line-height: 30px; /* 187.5% */
 	letter-spacing: 0.96px;
 	border: none;
-}
-.email_ft_label {
-	color: $var1;
+  }
+  .email_ft_label {
+	color: #fff;
 	font-family: Roboto;
 	font-size: 14px;
 	font-style: normal;
@@ -243,8 +166,8 @@ form {
 	line-height: normal;
 	letter-spacing: 0.42px;
 	text-transform: uppercase;
-}
-.footer_input {
+  }
+  .footer_input {
 	border-radius: 4px;
 	border: 1px solid rgba(255, 255, 255, 0.3);
 	background: rgba(33, 150, 243, 0);
@@ -256,30 +179,31 @@ form {
 	font-size: 16px;
 	font-style: normal;
 	font-weight: 400;
-	line-height: 20px;
+	line-height: 20px; /* 125% */
 	letter-spacing: 0.48px;
 	padding: 15px 295px 15px 16px;
 	box-sizing: border-box;
-}
-.form_footer_box {
+  }
+  .form_footer_box {
 	display: flex;
 	justify-content: center;
+  
+  
 	gap: 23px;
 	flex-direction: column;
-}
-.wrap_modal {
+  }
+  .wrap_modal {
+	display:flex;
+	gap:30px;
+  }
+  .label_wrap {
 	display: flex;
-	gap: 30px;
-}
-.label_wrap {
-	display: flex;
-}
-.end .container {
+  }
+  .end>.container {
 	display: flex;
 	justify-content: center;
-}
-.footer_form {
+  }
+  .footer_form {
 	justify-content: center;
 	display: flex;
-}
-}
+  }

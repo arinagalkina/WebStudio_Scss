@@ -1,0 +1,6 @@
+@mixin title($size, $color, $font-weight) {
+  font-weight: $font-weight;
+  font-size: $size;
+  line-height: 42px;
+  color: $color;
+}

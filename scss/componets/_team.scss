@@ -1,0 +1,104 @@
+.team {
+	background-color: #fff;
+  }
+
+  .cards {
+	display: flex;
+	justify-content: center;
+	gap: 30px;
+	margin: 0 auto;
+	padding-bottom: 94px;
+  }
+  .team__card {
+	background: #ffffff;
+	width: 260px;
+	/* material shadow v1 */
+  
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+	  0px 2px 1px rgba(0, 0, 0, 0.2);
+	border-radius: 0px 0px 4px 4px;
+  }
+
+  .progect_team {
+	background: #ffffff;
+	border: 1px solid #eeeeee;
+	width: 370px;
+  }
+  .text__cards {
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 36px;
+	/* identical to box height, or 200% */
+  
+	letter-spacing: 0.06em;
+  
+	color: #212121;
+  }
+  .box-team {
+	width: 370px;
+	height: 294px;
+	position: relative;
+	background-color: rgba(33, 150, 243, 0.9);
+	z-index: 30;
+  }
+  .box-team > .p-box-team {
+	display: none;
+  }
+  .box-team:hover > .p-box-team {
+	display: block;
+	transition: 0.8s all;
+  }
+  .p-box-team {
+	color: #FFF;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 155.556% */
+  letter-spacing: 0.54px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+  }
+
+  .team__social {
+	margin: 17px;
+	display: flex;
+	padding: 16px 30px 32px;
+	gap: 22px;
+  }
+  
+  .team__card > .container {
+	display: flex;
+	gap: 22px;
+	margin-left: 54px;
+	margin-bottom: 42px;
+	margin-top: 28px;
+  }
+  
+  .elipse {
+	width: 20px;
+	height: 20px;
+	background-color: #ffffff;
+	border-radius: 100%;
+	position: relative;
+	cursor: pointer;
+  }
+  .card__photo {
+	width: 100%;
+  }
+  .team__title {
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 42px;
+	text-align: center;
+	letter-spacing: 0.03em;
+	padding-top: 94px;
+  
+	color: #212121;
+  }

@@ -1,8 +1,15 @@
 @import "./utils/colors";
-@import "./componets/others";
-@import "./componets/section";
+@import "./utils/mixin";
+@import "./utils/placeholder";
 
+// @import "./componets/section";
+@import "./utils/general";
 @import "./componets/header";
+@import "./componets/others";
+@import "./componets/feature";
+@import "./componets/work";
+@import "./componets/team";
 @import "./componets/footer";
 @import "./componets/modal";
 @import "./componets/others";
+// @import "./componets/others";
