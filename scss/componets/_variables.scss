@@ -51,3 +51,20 @@ h1 {
 
 
 
+ 
+
+.block {
+    @extend %block
+}
+
+.title {
+	@extend %title
+}
+
+
+
+	
+
+
+
+

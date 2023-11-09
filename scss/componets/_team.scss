@@ -1,27 +1,35 @@
-.team {
-	background-color: #fff;
-  }
 
-  .cards {
-	display: flex;
-	justify-content: center;
-	gap: 30px;
-	margin: 0 auto;
-	padding-bottom: 94px;
-  }
-  .team__card {
-	background: #ffffff;
-	width: 260px;
-	/* material shadow v1 */
-  
-	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+
+
+.team {
+	background-color: $white;
+	&__card {
+		background: $white;
+		width: 260px;
+		box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
 	  0px 2px 1px rgba(0, 0, 0, 0.2);
-	border-radius: 0px 0px 4px 4px;
+		border-radius: 0px 0px 4px 4px;
+	}
+		/* material shadow v1 */
+		&-team {
+			width: 370px;
+			height: 294px;
+			position: relative;
+			background-color: rgba(33, 150, 243, 0.9);
+			z-index: 30;
+		  }
+		  &__social {
+			margin: 17px;
+			display: flex;
+			padding: 16px 30px 32px;
+			gap: 22px;
+		}
+  
   }
 
   .progect_team {
-	background: #ffffff;
-	border: 1px solid #eeeeee;
+	background: $white;
+	border: 1px solid $white-diff;
 	width: 370px;
   }
   .text__cards {
@@ -34,16 +42,10 @@
   
 	letter-spacing: 0.06em;
   
-	color: #212121;
+	color: $dark;
   }
-  .box-team {
-	width: 370px;
-	height: 294px;
-	position: relative;
-	background-color: rgba(33, 150, 243, 0.9);
-	z-index: 30;
-  }
-  .box-team > .p-box-team {
+
+.p-box-team {
 	display: none;
   }
   .box-team:hover > .p-box-team {
@@ -57,48 +59,85 @@
   font-style: normal;
   font-weight: 400;
   line-height: 28px; /* 155.556% */
-  letter-spacing: 0.54px;
+
+	}
+
+
+.cards {
+	display: flex;
+	justify-content: center;
+	gap: 30px;
+	margin: 0 auto;
+	padding-bottom: 94px;
+}
+.progect_team {
+	background: $white;
+	border: 1px solid $white-diff;
+	width: 370px;
+}
+.text__cards {
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 36px;
+	letter-spacing: 0.06em;
+	color: $dark;
+}
+.box-team {
+	width: 370px;
+	height: 294px;
+	position: relative;
+	background-color: rgba(33, 150, 243, 0.9);
+	z-index: 30;
+	
+	&:hover > .p-box-team {
+		display: block;
+		transition: 0.8s all;
+	}
+}
+
+.p-box-team {
+	color: $white;
+	font-family: Roboto;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 28px;
+	letter-spacing: 0.54px;
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-  }
-
-  .team__social {
-	margin: 17px;
-	display: flex;
-	padding: 16px 30px 32px;
-	gap: 22px;
-  }
-  
-  .team__card > .container {
+}
+.elipse {
+	width: 20px;
+	height: 20px;
+	background-color: $white;
+	border-radius: 100%;
+	position: relative;
+	cursor: pointer;
+}
+.card__photo {
+	width: 100%;
+}
+.p-box-team > .container {
 	display: flex;
 	gap: 22px;
 	margin-left: 54px;
 	margin-bottom: 42px;
 	margin-top: 28px;
-  }
+}
+
+//   .team__title {
+// 	font-family: "Roboto";
+// 	font-style: normal;
+// 	font-weight: 700;
+// 	font-size: 36px;
+// 	line-height: 42px;
+// 	text-align: center;
+// 	letter-spacing: 0.03em;
+// 	padding-top: 94px;
   
-  .elipse {
-	width: 20px;
-	height: 20px;
-	background-color: #ffffff;
-	border-radius: 100%;
-	position: relative;
-	cursor: pointer;
-  }
-  .card__photo {
-	width: 100%;
-  }
-  .team__title {
-	font-family: "Roboto";
-	font-style: normal;
-	font-weight: 700;
-	font-size: 36px;
-	line-height: 42px;
-	text-align: center;
-	letter-spacing: 0.03em;
-	padding-top: 94px;
-  
-	color: #212121;
-  }
+// 	color: #212121;
+//   }

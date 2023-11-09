@@ -1,6 +1,23 @@
-@mixin title($size, $color, $font-weight) {
-  font-weight: $font-weight;
+// @mixin title($size, $color, $line-height) {
+//   font-size: $size;
+//   font-weight: 700;
+//   line-height: $line-height;
+//   color: $color;
+//   text-align: center;
+
+//   letter-spacing: 1.08px;
+
+//   line-height: 42px;
+//   font-family: Roboto;
+
+// }
+
+@mixin text($size, $letter-spacing, $font-weight) {
+  color: $light-grey;
+  font-family: Roboto;
   font-size: $size;
-  line-height: 42px;
-  color: $color;
+  font-style: normal;
+  font-weight: $font-weight;
+  line-height: normal;
+  letter-spacing: $letter-spacing;
 }

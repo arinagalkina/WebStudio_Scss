@@ -1,16 +1,16 @@
 .end {
 	padding: 30px 0;
 	margin: 0 auto;
-  }
+
   
-  .end__item {
+&__item {
 	display: flex;
 	justify-content: space-between;
 	flex-direction: column;
 	padding: 0;
   }
   
-  .end--items {
+&--items {
 	font-family: "Roboto";
 	font-style: normal;
 	font-weight: 400;
@@ -22,7 +22,7 @@
   
 	color: #ffffff;
   }
-  .end_items {
+  &_items {
 	font-family: "Roboto";
 	font-style: normal;
 	font-weight: 400;
@@ -34,6 +34,7 @@
   
 	color: rgba(255, 255, 255, 0.6);
   }
+}
   .footer_h2 {
 	font-family: "Roboto";
 	font-style: normal;
