@@ -13,8 +13,15 @@
 		gap: 21px;
 		margin: 0 auto;
 		padding: 0;
+		@media (min-width:320px) {
+			flex-wrap: wrap;
+			
+		}
+		@media (min-width:1200px) {
+			flex-wrap: nowrap;
+		}
 	}
-	&_item {
+	&__item {
 		width: 270px;
 		font-family: "Roboto";
 		font-style: normal;
@@ -26,6 +33,21 @@
     letter-spacing: 0.03em;
 
     color: #757575;
+	@media (min-width:320px) {
+		width: 100%;
+		
+	}
+	@media (min-width:480px) {
+		width: 450px;
+
+	}
+	@media (min-width:768px) {
+		width: 354px;
+		
+	}
+	@media (min-width:1200px) {
+		width: 270px;
+	}
 	}
   
 	&__images {
@@ -33,9 +55,13 @@
 		width: 70px;
 		background:$whiteish;
 		border-radius: 4px;
-		padding: 25px 100px;
+		padding: 25px 110px;
 		margin: 0 auto;
     align-items: center;
+	
+	@media (max-width:768px) {
+		margin:0;
+		padding: 34px 142px;
 	}
 }
 	/* or 171% */
@@ -52,10 +78,24 @@
     line-height: normal;
     letter-spacing: 0.42px;
     text-transform: uppercase;
+	@media (min-width:320px) {
+		text-align: center;
+	}
+	@media (min-width:768px) {
+		text-align: left;
+		// margin-left: 34px;
+		
+}
 }
 .feature__item > p {
   @include text(14px, 0.42px, 400);
   line-height: 24px;
+  @media (max-width:768px) {
+	// margin-left: 34px;
+
+	width: 354px;
+height: 48px;
+}
 
 }
 
@@ -80,4 +120,5 @@
 		line-height: 24px;
 		letter-spacing: 0.42px;
 	}
+}
 

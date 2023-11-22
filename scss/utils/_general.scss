@@ -1,40 +1,50 @@
 .container {
-    width: 1140px;
-    margin: 0 auto;
+  margin: 0 auto;
+  @media (min-width: 320px) {
+    padding: 0 15px;
   }
-  .block {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 16px;
-    text-align: center;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    height: 61px;
-
-
-    
-  
-    position: relative;
-    left: 0;
-    top: -65px;background: rgba(47, 48, 58, 0.8);
-    width: 100%
-    
+  @media (min-width: 768px) {
+    padding: 0;
+    max-width: 738px;
+  }
+  @media (min-width: 1200px) {
+    max-width: 1170px;
+  }
 }
-.block>h4 {
-    color: #FFFFFF;
-        
-  }
-  body {
-    background-color: #FFFFFF;
-  }
-  
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.block {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  height: 61px;
+
+  position: relative;
+  left: 0;
+  top: -65px;
+  background: rgba(47, 48, 58, 0.8);
+  width: 100%;
+}
+.block > h4 {
+  color: #ffffff;
+}
+body {
+  background-color: #ffffff;
+}
+
 a:hover {
-  color:#2196F3;
+  color: #2196f3;
 }
 
 a {
@@ -43,10 +53,6 @@ a {
 li {
   list-style-type: none;
 }
-
-
-
-
 
 h1 {
   font-family: "Roboto";

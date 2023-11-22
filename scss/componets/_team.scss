@@ -1,143 +1,158 @@
-
-
-
 .team {
-	background-color: $white;
-	&__card {
-		background: $white;
-		width: 260px;
-		box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-	  0px 2px 1px rgba(0, 0, 0, 0.2);
-		border-radius: 0px 0px 4px 4px;
-	}
-		/* material shadow v1 */
-		&-team {
-			width: 370px;
-			height: 294px;
-			position: relative;
-			background-color: rgba(33, 150, 243, 0.9);
-			z-index: 30;
-		  }
-		  &__social {
-			margin: 17px;
-			display: flex;
-			padding: 16px 30px 32px;
-			gap: 22px;
-		}
-  
+  background-color: $white;
+  &__card {
+    background: $white;
+    width: 260px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    @media (max-width: 768px) {
+      width: 450px;
+      height: 460px;
+    }
+    @media (min-width: 768px) {
+      width: 354px;
+      height: 536px;
+    }
   }
+  /* material shadow v1 */
+  &-team {
+    width: 370px;
+    height: 294px;
+    position: relative;
+    background-color: rgba(33, 150, 243, 0.9);
+    z-index: 30;
+  }
+  &__social {
+    margin: 17px;
+    display: flex;
+    padding: 16px 30px 32px;
+    gap: 22px;
+    @media (min-width: 320px) {
+      justify-content: center;
+    }
+  }
+}
 
-  .progect_team {
-	background: $white;
-	border: 1px solid $white-diff;
-	width: 370px;
-  }
-  .text__cards {
-	font-family: "Roboto";
-	font-style: normal;
-	font-weight: 700;
-	font-size: 18px;
-	line-height: 36px;
-	/* identical to box height, or 200% */
-  
-	letter-spacing: 0.06em;
-  
-	color: $dark;
-  }
+.progect_team {
+  background: $white;
+  border: 1px solid $white-diff;
+  width: 370px;
+}
+.text__cards {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 36px;
+  /* identical to box height, or 200% */
+
+  letter-spacing: 0.06em;
+
+  color: $dark;
+}
 
 .p-box-team {
-	display: none;
-  }
-  .box-team:hover > .p-box-team {
-	display: block;
-	transition: 0.8s all;
-  }
-  .p-box-team {
-	color: #FFF;
+  display: none;
+}
+.box-team:hover > .p-box-team {
+  display: block;
+  transition: 0.8s all;
+}
+.p-box-team {
+  color: #fff;
   font-family: Roboto;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: 28px; /* 155.556% */
-
-	}
-
+}
 
 .cards {
-	display: flex;
-	justify-content: center;
-	gap: 30px;
-	margin: 0 auto;
-	padding-bottom: 94px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 0 auto;
+  padding-bottom: 94px;
+  @media (min-width: 320px) {
+    flex-wrap: wrap;
+    padding: 0;
+  }
+  @media (min-width: 992px) {
+    flex-wrap: nowrap;
+  }
 }
 .progect_team {
-	background: $white;
-	border: 1px solid $white-diff;
-	width: 370px;
+  background: $white;
+  border: 1px solid $white-diff;
+  width: 370px;
 }
 .text__cards {
-	font-family: "Roboto";
-	font-style: normal;
-	font-weight: 700;
-	font-size: 18px;
-	line-height: 36px;
-	letter-spacing: 0.06em;
-	color: $dark;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 36px;
+  letter-spacing: 0.06em;
+  color: $dark;
 }
 .box-team {
-	width: 370px;
-	height: 294px;
-	position: relative;
-	background-color: rgba(33, 150, 243, 0.9);
-	z-index: 30;
-	
-	&:hover > .p-box-team {
-		display: block;
-		transition: 0.8s all;
-	}
+  width: 370px;
+  height: 294px;
+  position: relative;
+  background-color: rgba(33, 150, 243, 0.9);
+  z-index: 30;
+
+  &:hover > .p-box-team {
+    display: block;
+    transition: 0.8s all;
+  }
 }
 
 .p-box-team {
-	color: $white;
-	font-family: Roboto;
-	font-size: 18px;
-	font-style: normal;
-	font-weight: 400;
-	line-height: 28px;
-	letter-spacing: 0.54px;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+  color: $white;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.54px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .elipse {
-	width: 20px;
-	height: 20px;
-	background-color: $white;
-	border-radius: 100%;
-	position: relative;
-	cursor: pointer;
+  width: 20px;
+  height: 20px;
+  background-color: $white;
+  border-radius: 100%;
+  position: relative;
+  cursor: pointer;
 }
 .card__photo {
-	width: 100%;
+  width: 100%;
 }
 .p-box-team > .container {
-	display: flex;
-	gap: 22px;
-	margin-left: 54px;
-	margin-bottom: 42px;
-	margin-top: 28px;
+  display: flex;
+  gap: 22px;
+  margin-left: 54px;
+  margin-bottom: 42px;
+  margin-top: 28px;
 }
 
-//   .team__title {
-// 	font-family: "Roboto";
-// 	font-style: normal;
-// 	font-weight: 700;
-// 	font-size: 36px;
-// 	line-height: 42px;
-// 	text-align: center;
-// 	letter-spacing: 0.03em;
-// 	padding-top: 94px;
-  
-// 	color: #212121;
-//   }
+.team__title {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  padding-top: 94px;
+
+  color: #212121;
+  @media (min-width: 320px) {
+    font-size: 28px;
+  }
+}
