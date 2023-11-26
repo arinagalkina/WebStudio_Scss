@@ -98,8 +98,18 @@
     @media(min-width:320px) {
       display: none;
     }
+    @media (max-width: 767px) {
+    
+        display: none;
+      
+      }
     @media (min-width:768px){
       display: flex;
+    }
+    @media (max-width: 767px) {
+       
+        display: none;
+      
     }
   }
   &__contact {
@@ -204,6 +214,9 @@
   gap: 8px;
   padding: 94px 0 35px 0;
   justify-content: center;
+  @media (min-width: 768px) {
+    display: block;
+  }
 }
 
 
