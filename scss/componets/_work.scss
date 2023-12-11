@@ -23,7 +23,13 @@
   &--item {
 	width: 370px;
 	height: 294px;
+  @media (max-width:768px) {
+    width: 232px;
+    
   }
+  }
+
+
 }
   .img_class {
 	width: 100%;
