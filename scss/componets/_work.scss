@@ -5,9 +5,17 @@
 	display: flex;
 	justify-content: space-between;
 	padding: 0;
+  @media (min-width:320px){
+    flex-wrap: wrap;
   }
+  @media (min-width:1200px){
+    flex-wrap: nowrap;
+  }
+  } 
   &__title {
-	@extend %title
+	@extend %title;
+  margin-bottom: 50px;
+
   }
  &__img {
     width: 100%;

@@ -17,9 +17,12 @@
   &__ul {
     display: flex;
     gap: 30px;
-    padding: 50px;
+
     @media (min-width: 320px) {
       flex-wrap: wrap;
+        padding: 2px;
+    }
+    @media (max-width: 786px) {
       padding: 0;
     }
   }

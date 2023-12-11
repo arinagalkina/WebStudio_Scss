@@ -52,6 +52,9 @@
 	@media (min-width:320px) {
 		margin: 0;
 	}
+	@media (max-width:786px) {
+		margin-top: 27px;
+	}
   }
   .elipses:hover {
 	background-color: #2196f3;

@@ -6,7 +6,8 @@
 	justify-content: center;
   padding: 94px 0;
 	&--title {
-    @extend %title
+    @extend %title;
+	margin-top: 30px;
 	}
 	&__items {
 		display: flex;
@@ -52,7 +53,7 @@
   
 	&__images {
 		display: flex;
-		width: 70px;
+		width: 100%;
 		background:$whiteish;
 		border-radius: 4px;
 		padding: 25px 110px;
@@ -93,8 +94,7 @@
   @media (max-width:768px) {
 	// margin-left: 34px;
 
-	width: 354px;
-height: 48px;
+	
 }
 
 }

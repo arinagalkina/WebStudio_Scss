@@ -1,5 +1,9 @@
 .team {
-  background-color: $white;
+  background-color: $whiteish;
+  padding: 94px 215px;
+  @media (max-width:768px) {
+    padding: 15px;
+  }
   &__card {
     background: $white;
     width: 260px;
@@ -9,10 +13,11 @@
     @media (max-width: 768px) {
       width: 450px;
       height: 460px;
+      
     }
     @media (min-width: 768px) {
       width: 354px;
-      height: 536px;
+      height: 428px;
     }
   }
   /* material shadow v1 */
@@ -38,6 +43,9 @@
   background: $white;
   border: 1px solid $white-diff;
   width: 370px;
+}
+.job {
+  margin-top: 10px;
 }
 .text__cards {
   font-family: "Roboto";
@@ -122,6 +130,10 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+.name {
+  margin-top: 30px;
+}
 .elipse {
   width: 20px;
   height: 20px;
@@ -150,6 +162,7 @@
   text-align: center;
   letter-spacing: 0.03em;
   padding-top: 94px;
+  margin-bottom: 30px;
 
   color: #212121;
   @media (min-width: 320px) {

@@ -25,7 +25,8 @@ body {
 	background-color: $var1;
 }
 a:hover {
-	color: $var2;
+	color:$blue;
+	transition: 0.4s all;
 }
 a {
 	text-decoration: none;
