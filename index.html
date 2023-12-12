@@ -17,27 +17,12 @@
     />
     <link rel="stylesheet" href="./css/style.min.css" />
     <style>
-      img {
-        width: 200px;
-      }
+    
     </style>
   </head>
   <body>
     <header class="header">
       <div class="container">
-
-    
-
-    
-          <button class="menu-toggle js-open-menu">
-            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M8 14.6667V12H32V14.6667H8ZM8 21.3333H32V18.6667H8V21.3333ZM8 28H32V25.3333H8V28Z" fill="black"/>
-            </svg>
-          </button>
-    
-    
-
-
         <div class="header__blocks">
           <div class="header__left">
             <a class="header__blok" href="/">
@@ -45,6 +30,7 @@
                 <span class="color_span">Web</span>Studio
               </h2>
             </a>
+
             <nav class="header__nav">
               <ul class="header__list">
                 <li class="header__item">
@@ -58,30 +44,36 @@
                 </li>
               </ul>
             </nav>
-            <div class="header__contact">
-              <a class="header__email" href=" #"> <i class="fa-solid fa-mobile-screen-button"></i>+38 096 111 11 11</a >
-                
-              <a class="header__email" href=" mailto:info@devstudio.com ">
-          
-                  <i class="fa-regular fa-envelope"></i>
-                info@devstudio.com</a
-              >
-                
-            </div>
-    
-          
-         
-          
-         
-        
-   
-          
-          
-        
-         
+          </div>
+          <div class="header__contact">
+            <a class="header__tel" href="tel:+380961111111">
+              <i class="fa-solid fa-mobile"></i>
+              +38 096 111 11 11</a
+            >
+
+            <a class="header__email" href=" mailto:info@devstudio.com ">
+              <i class="fa-regular fa-envelope"></i>
+              info@devstudio.com</a
+            >
+          </div>
+          <button class="menu-toggle js-open-menu">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="40"
+              а
+              height="40"
+              viewBox="0 0 40 40"
+              fill="none"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M8 14.6667V12H32V14.6667H8ZM8 21.3333H32V18.6667H8V21.3333ZM8 28H32V25.3333H8V28Z"
+                fill="black"
+              />
+            </svg>
+          </button>
         </div>
-        </div>
-    
       </div>
     </header>
 
@@ -90,7 +82,7 @@
         class="promo animate__animated animate__fadeInRight wow"
         data-wow-duration="2s"
       >
-        <div class="promo_overlay">
+        <div class="promo__overlay">
           <h1 class="promo__title">
             ефективні рішення для<br />
             вашого бізнесу
@@ -136,63 +128,74 @@
           </div>
         </div>
       </section>
-      <section class="feature">
-        <div class="container">
-          <ul
-            class="feature__items animate__animated animate__pulse wow"
-            data-wow-duration="2s"
-          >
-            <li class="feature__item">
-              <img
-                class="feature__images"
-                src="./src/img/icons/antenna1.svg"
-                alt="image"
-              />
-
-              <h4 class="feature--title">Увага до деталей</h4>
-              <p>
-                Ідейні міркування, і навіть початок повсякденної роботи з
-                формування позиції.
-              </p>
-            </li>
-            <li class="feature__item">
-              <img
-                class="feature__images"
-                src="./src/img/icons/clock2.svg"
-                alt="image"
-              />
-              <h4 class="feature--title">Пунктуальнiсть</h4>
-              <p>
-                Завдання організації, особливо рамки і місце навчання кадрів
-                тягне у себе.
-              </p>
-            </li>
-            <li class="feature__item">
-              <img
-                class="feature__images"
-                src="./src/img/icons/diagram3.svg"
-                alt="image"
-              />
-              <h4 class="feature--title">Планування</h4>
-              <p>
-                Так само консультація з широким активом значною мірою зумовлює.
-              </p>
-            </li>
-            <li class="feature__item">
-              <img
-                class="feature__images"
-                src="./src/img/icons/astroanut4.svg"
-                alt="image"
-              />
-              <h4 class="feature--title">Сучасні Технології</h4>
-              <p>
-                Значимість цих проблем настільки очевидна, що реалізація
-                планових завдань.
-              </p>
-            </li>
-          </ul>
-        </div>
-     </section>
+      <section class="feature"> 
+        <div class="container"> 
+          <ul 
+            class="feature__items animate__animated animate__pulse wow" 
+            data-wow-duration="2s" 
+          > 
+            <li class="feature__item"> 
+              <div class="feature__box"> 
+                <img 
+                  class="feature__images" 
+                  src="./src/img/icons/antenna1.svg" 
+                  alt="image" 
+                /> 
+              </div> 
+ 
+              <h4 class="feature--title">Увага до деталей</h4> 
+              <p> 
+                Ідейні міркування, і навіть початок повсякденної роботи з 
+                формування позиції. 
+              </p> 
+            </li> 
+            <li class="feature__item"> 
+              <div class="feature__box"> 
+                <img 
+                  class="feature__images" 
+                  src="./src/img/icons/clock2.svg" 
+                  alt="image" 
+                /> 
+              </div> 
+ 
+              <h4 class="feature--title">Пунктуальнiсть</h4> 
+              <p> 
+                Завдання організації, особливо рамки і місце навчання кадрів 
+                тягне у себе. 
+              </p> 
+            </li> 
+            <li class="feature__item"> 
+              <div class="feature__box"> 
+                <img 
+                  class="feature__images" 
+                  src="./src/img/icons/diagram3.svg" 
+                  alt="image" 
+                /> 
+              </div> 
+ 
+              <h4 class="feature--title">Планування</h4> 
+              <p> 
+                Так само консультація з широким активом значною мірою зумовлює. 
+              </p> 
+            </li> 
+            <li class="feature__item"> 
+              <div class="feature__box"> 
+                <img 
+                  class="feature__images" 
+                  src="./src/img/icons/astroanut4.svg" 
+                  alt="image" 
+                /> 
+              </div> 
+ 
+              <h4 class="feature--title">Сучасні Технології</h4> 
+              <p> 
+                Значимість цих проблем настільки очевидна, що реалізація 
+                планових завдань. 
+              </p> 
+            </li> 
+          </ul> 
+        </div> 
+      </section>
       <section class="work">
         <div class="container">
           <h2 class="work__title title">Чим ми займаємося</h2>
@@ -220,7 +223,7 @@
           </ul>
         </div>
       </section>
-     <section
+      <section
         class="team animate__animated animate__fadeInUp wow"
         data-wow-duration="2s"
       >
@@ -701,7 +704,7 @@
           </ul>
         </div>
       </section>
-     <section class="clients">
+      <section class="clients">
         <h2 class="client_title title">Постійні клієнти</h2>
         <div class="container">
           <ul class="clients__ul">
@@ -1034,7 +1037,7 @@
       </section>
     </main>
 
- <footer class="end">
+    <footer class="end">
       <div class="container">
         <div class="all_box_footer">
           <div class="logo_and_info">
@@ -1194,13 +1197,9 @@
           </form>
         </div>
       </div>
-    </footer>  
+    </footer>   -->
 
-
-
-
-
-    <div class="menu-container js-menu-container " ">
+    <!-- <div class="menu-container js-menu-container " ">
       <button class="menu-toggle js-close-menu">
         <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
           <path d="M29.6667 12.88L27.7867 11L20.3333 18.4533L12.88 11L11 12.88L18.4533 20.3333L11 27.7867L12.88 29.6667L20.3333 22.2133L27.7867 29.6667L29.6667 27.7867L22.2133 20.3333L29.6667 12.88Z" fill="#212121"/>

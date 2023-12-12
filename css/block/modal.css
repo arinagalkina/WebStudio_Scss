@@ -201,7 +201,7 @@ form {
 }
 .end>.container {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }
 .footer_form {
   justify-content: center;

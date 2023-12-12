@@ -124,10 +124,7 @@ form {
   text-decoration: underline;
   cursor: pointer;
 }
-.js-open-menu {
-  position: absolute;
-  left: 277px;
-}
+
 .form_box {
   width: 448px;
   height: 40px;
@@ -211,13 +208,14 @@ form {
   gap: 23px;
   flex-direction: column;
 }
-//   .wrap_modal {
-// 	display:flex;
-// 	gap:30px;
-// 	@media (max-width:992pxx) {
-// 		display: block;
-// 		gap: 20px;
-// 	}
+  .wrap_modal {
+	display:flex;
+	gap:30px;
+	@media (max-width:992pxx) {
+		display: block;
+		gap: 20px;
+	}
+}
 //   }
 .label_wrap {
   display: flex;

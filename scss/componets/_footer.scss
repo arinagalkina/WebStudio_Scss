@@ -90,7 +90,13 @@
   }
   .logo {
 	text-align: center;
+	&_and_info {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+	}
   }
+  
   
   
   
@@ -110,13 +116,13 @@
   .all_box_footer {
 	gap: 94px;
 	display: flex;
-	@media (min-width:320px) {
+	@media (max-width:992px) {
 		display: block;
 	}
   
   }
   .join_box {
 	display:flex;
-	justify-content: center;
+	margin-top: 10px;
 	flex-direction:column
   }
