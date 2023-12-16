@@ -211,7 +211,7 @@ form {
   .wrap_modal {
 	display:flex;
 	gap:30px;
-	@media (max-width:992pxx) {
+	@media (max-width:992px) {
 		display: block;
 		gap: 20px;
 	}

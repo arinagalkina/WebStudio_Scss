@@ -7,20 +7,25 @@
 	padding: 0;
   @media (min-width:320px){
     flex-wrap: wrap;
+    justify-content: center;
   }
-  @media (min-width:1200px){
+  @media (min-width:768px){
     flex-wrap: nowrap;
+    justify-content: space-between;
   }
   } 
   &__title {
 	@extend %title;
   margin-bottom: 50px;
+  @media (max-width:768px) {
+  font-size: 30px;
+  }
 
   }
  &__img {
     width: 100%;
   }
-  &--item {
+  &__item {
 	width: 370px;
 	height: 294px;
   @media (max-width:768px) {
